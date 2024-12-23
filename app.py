@@ -175,14 +175,14 @@ def main():
         # Afficher l'image au centre de la sous-colonne du milieu
         with subcol2:
             st.image("icone1.png", caption="LegiChat", width=150)
-            st.markdown("""
+           
+    st.markdown("""
                 <p style="text-align: center; color: #4CAF50; font-size: 18px;">
                 LegiChat est un chatbot qui fournit des réponses juridiques basées sur les textes en vigueur au Burkina Faso. 
                 Il vous aide à naviguer à travers les lois et décrets, en répondant à vos questions sur des sujets juridiques spécifiques.
                 </p>
                 """, unsafe_allow_html=True)
         
-
     # Titre principal sous l'image
     st.markdown("<h1>Comment puis-je vous aider?</h1>", unsafe_allow_html=True)
 
