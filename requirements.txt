@@ -7,4 +7,5 @@ keras
 tensorflow
 tf-keras
 langchain
+langchain-community
 openai
