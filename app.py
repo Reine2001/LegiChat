@@ -184,7 +184,7 @@ def main():
                 """, unsafe_allow_html=True)
         
     # Titre principal sous l'image
-    st.markdown("<h1>Comment puis-je vous aider?</h1>", unsafe_allow_html=True)
+    st.markdown("<h1> Comment puis-je vous aider?</h1>", unsafe_allow_html=True)
 
     # Saisie de la question
     query = st.text_input("", placeholder="Tapez ici...")
