@@ -178,7 +178,7 @@ def main():
             st.markdown("<p style="text-align: center; color: #4CAF50; font-size: 18px;">
             LegiChat est un chatbot qui fournit des réponses juridiques basées sur les textes en vigueur au Burkina Faso. 
             Il vous aide à naviguer à travers les lois et décrets, en répondant à vos questions sur des sujets juridiques spécifiques.
-            </p>",  unsafe_allow_html=True)
+            </p>", unsafe_allow_html=True)
 
         
 
