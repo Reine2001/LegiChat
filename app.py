@@ -14,7 +14,7 @@ from langchain.memory import ConversationBufferMemory
 load_dotenv()
 
 # URL ngrok ou Elasticsearch local
-ngrok_url = 'https://ebed-102-216-123-30.ngrok-free.app'
+ngrok_url = 'https://485d-41-138-104-200.ngrok-free.app'
 
 # Configuration du modèle Gemini Flash 1.5
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
