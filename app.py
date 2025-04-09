@@ -12,7 +12,8 @@ import google.generativeai as genai
 
 load_dotenv()
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
-ngrok_url = 'https://7c5d-102-180-19-51.ngrok-free.app'
+ngrok_url = os.environ["NGROK_URL"]
+
 
 gen_config = {
     "temperature": 0.5,
@@ -23,8 +24,8 @@ gemini_model = genai.GenerativeModel(
     generation_config=gen_config
 )
 
-tokenizer = DistilBertTokenizer.from_pretrained('./distilbert/models--distilbert-base-uncased')
-distil_model = TFDistilBertModel.from_pretrained('./distilbert/models--distilbert-base-uncased')
+tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-uncased')
+distil_model = TFDistilBertModel.from_pretrained('distilbert-base-uncased')
 
 
 def generate_embedding(question):
