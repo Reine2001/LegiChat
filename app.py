@@ -23,8 +23,8 @@ gemini_model = genai.GenerativeModel(
     generation_config=gen_config
 )
 
-tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-uncased')
-distil_model = TFDistilBertModel.from_pretrained('distilbert-base-uncased')
+tokenizer = DistilBertTokenizer.from_pretrained('./distilbert/models--distilbert-base-uncased')
+distil_model = TFDistilBertModel.from_pretrained('./distilbert/models--distilbert-base-uncased')
 
 
 def generate_embedding(question):
